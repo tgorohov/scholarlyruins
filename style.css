@@ -13,7 +13,7 @@ body
 /* draggable targets */
 [data-draggable="target"]
 {
-	float:left;
+	float:center;
 	list-style-type:none;
 	
 	width:21%;
