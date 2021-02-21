@@ -73,5 +73,5 @@ body
 [data-draggable="item"][aria-grabbed="true"]
 {
 	background:#8ad;
-	color:#fff;
+	color:#f00;
 }
