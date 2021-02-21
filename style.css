@@ -72,6 +72,6 @@ body
 /* items grabbed state */
 [data-draggable="item"][aria-grabbed="true"]
 {
-	background:#8ad;
-	color:#f00;
+	background:#f00;
+	color:#fff;
 }
