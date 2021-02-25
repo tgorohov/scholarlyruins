@@ -2,7 +2,8 @@
 html, body
 {
 	font:normal normal normal 100%/1.4 tahoma, sans-serif;
-	background-image: url("https://imgur.com/TBUbgL9.png") ;
+	background-image: url("https://imgur.com/ANOAiJD.png") ;
+	background-size: 850px;
 	/* background:#f9f9f9; */
 	color:#000;
 }
@@ -16,6 +17,7 @@ body
 {
 	float:center;
 	list-style-type:none;
+	
 	
 	width:21%;
 	height:3em;
