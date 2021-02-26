@@ -599,7 +599,7 @@
  
    }, false);
 
-   let solutions=[0,0,0,0,0,0,0,0,0,0,0];
+   let solutions=[2,6,5,4,0,1,6,3,3,2,0,6,5,2,4,1,3,5,4,0,1];
    function checkIfSolved()
    {
         let valid = true;
