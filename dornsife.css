@@ -1,0 +1,18 @@
+#seconds {
+    font-size: 5em;
+    position: relative;
+    left:40px; 
+    top:230px;
+}
+  #minutes {
+    font-size: 5em;
+    position: relative;
+    left:40px; 
+    top:230px;
+  }
+  #colon {
+    font-size: 5em;
+    position: relative;
+    left:40px; 
+    top:230px;
+  }
