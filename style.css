@@ -2,13 +2,7 @@
 html, body
 {
 	font:normal normal normal 100%/1.4 tahoma, sans-serif;
-	background-image: url("https://imgur.com/nK5212Z.png") ;
-	background-size: 1000px;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	/* background:#f9f9f9; */
-	color:#000;
+	background-color: rgba(0,0,0,.5); // Sets to 50% transparent
 }
 body
 {
