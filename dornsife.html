@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dornsife Room</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://tgorohov.github.io/scholarlyruins/dornsife.css" type="text/css" />
+</head>
+<body>
+    <a href="https://escapesc.wixsite.com/tlcc" target="_blank" id="link1"><img src="https://imgur.com/LnlVPtK.png" style="size:relative; height: 265px;width:123px; position:relative; left:-8px; top:-10px" class="puzzle" id="puzzle-1"></a>
+    <a target="_blank" id = "link2"><img src="https://imgur.com/YcnNcVm.png" style="size:relative; height: 265px;width:125px; position:relative; left:-15px; top:-10px;" class="puzzle" id="puzzle-2"></a>
+    <a target="_blank" id = "link3"><img src="https://imgur.com/YcnNcVm.png" style="size:relative;height:265px;width:123px;position:relative; left:-19px; top:-10px" class="puzzle" id="puzzle-3"></a>
+    <a target="_blank" id = "link4"><img src="https://imgur.com/YcnNcVm.png" style="size:relative;height:265px;width:123px;position:relative; left:-23px; top:-10px" class="puzzle" id="puzzle-4"></a>
+    <a target="_blank" id = "link5"><img src="https://imgur.com/YcnNcVm.png" style="size:relative;height:265px;width:123px;position:relative; left:-29px; top:-10px" class="puzzle" id="puzzle-5"></a>
+    <a target="_blank" id = "link6"><img src="https://imgur.com/YcnNcVm.png" style="size:relative;height:265px;width:123px;position:relative; left:-33px; top:-12px" class="puzzle" id="puzzle-6"></a>
+    <a target="_blank" id = "link7"><img src="https://imgur.com/YcnNcVm.png" style="size:relative;height:265px;width:123px;position:relative; left:-37px; top:-10px" class="puzzle" id="puzzle-7"></a>
+    <a target="_blank" id = "link9"><img src="https://imgur.com/YcnNcVm.png" style="size:relative;width:192px;height:130px;position:relative; left:-137px; top:120px" class="puzzle" id="puzzle-optional"></a>
+    <a target="_blank" id = "link8"><img src="https://imgur.com/YcnNcVm.png" style="size:relative;height:265px;width:123px;position:relative; left:849px; top:-278px" class="puzzle" id="puzzle-8"></a>
+
+   
+
+    <div style="position:relative; left:370px; top:-130px" >
+        <h3>Enter final password for Puzzle 1 here:</h3>
+        <input class="input" id="input" type="text"style="position:relative; left:40px; top:-10px">
+        <button type="button" class="submit" style="position:relative; left:60px; top:-10px" id="submit">Submit</button>
+    </div>
+</iframe>
+
+    <audio controls style="display:none">
+        <source src="https://drive.google.com/uc?export=download&id=1XM6Ghuy2WCPtbT8poSxSmlUnXoxQbsm2" type="audio/mpeg">
+    </audio>
+
+    <script type="text/javascript">
+    TargetDate = "2021-03-04 3:00 PM";
+    BackColor = "gold"
+    ForeColor = "black";
+    CountActive = true;
+    CountStepper = +1;
+    LeadingZero = true;
+    DisplayFormat = "%%M%%:%%S%%";
+    FinishMessage = "It is finally here!";
+    
+        addSubmitOnEnter(document.querySelector(".input"), document.querySelector(".submit"));
+        let optionalpuzzle = false;
+        let puzzles_solved = 0;
+        let solutions = ["answer0", "answer1", "answer2", "answer3", "answer4", "answer5", "answer6"];
+        let submit_button = document.querySelector(".submit");
+        let puzzle_links = ["https://escapesc.wixsite.com/ology","https://escapesc.wixsite.com/biology", "https://escapesc.wixsite.com/global", "https://escapesc.wixsite.com/math", "https://escapesc.wixsite.com/artistic", "https://escapesc.wixsite.com/earth", "https://escapesc.wixsite.com/library"];
+
+        submit_button.onclick = function() {
+            let input = document.querySelector(".input").value;
+            input = input.toLowerCase();
+            let current_solution = solutions[puzzles_solved];
+            if (input == "gallymoggers") {
+                if (optionalpuzzle == false) {
+                    CountStepper = -60;
+                    setTimeout(changeCountStepper, 1000);
+                    optionalpuzzle = true;  
+                }
+                return;
+            };
+            if (input != current_solution) {
+                CountStepper = +30;
+                setTimeout(changeCountStepper, 1000);
+                return;
+            };
+            if (input == "answer5") {
+                let puzzleoptional = document.querySelector("#puzzle-optional");
+                puzzleoptional.src = "https://imgur.com/LnlVPtK.png";
+                document.querySelector("#link9").href = "https://escapesc.wixsite.com/thematicoption";
+            };
+            let next_image = document.querySelector("#puzzle-"+(puzzles_solved+2));
+            next_image.src= "https://imgur.com/LnlVPtK.png";
+            document.querySelector("#link"+(puzzles_solved+2)).href = puzzle_links[puzzles_solved];
+            puzzles_solved++;
+            document.querySelector("h3").innerHTML = "Enter final password for Puzzle " + (puzzles_solved+1) + " here:";
+            document.querySelector("audio").play();
+        };
+
+        function addSubmitOnEnter(input, button) {
+            input.addEventListener("keyup", event => submitOnEnter(event, button));
+        }
+
+        function submitOnEnter(event, button) {
+            if(event.key !== "Enter") return;
+            button.click();
+            event.preventDefault();
+        }
+        function changeCountStepper() {
+            CountStepper = +1;
+        }
+
+        
+        
+</script>
+<span style="font-family:verdana;font-size:40px;position:relative;top:-190px;left:100px">
+<script language="JavaScript" src="https://rhashemian.github.io/js/countdown.js"></script>
+</span>
+</body>
