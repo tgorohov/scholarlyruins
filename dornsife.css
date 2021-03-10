@@ -2,17 +2,17 @@
     font-size: 5em;
     position: relative;
     left:40px; 
-    top:240px;
+    top:-240px;
 }
   #minutes {
     font-size: 5em;
     position: relative;
     left:40px; 
-    top:240px;
+    top:-240px;
   }
   #colon {
     font-size: 5em;
     position: relative;
     left:40px; 
-    top:240px;
+    top:-240px;
   }
